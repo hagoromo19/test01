@@ -8,6 +8,7 @@
 <body>
 
 <h1>見出し1</h1>
+<div draggable="true" dropzone="copy"><img src="dashi_katsuo.png"></div>
 <h2>見出し2</h2>
 <ruby>
   <s>古い情報</s>
@@ -41,7 +42,12 @@
 
 
 </ruby>
-
+<dialog draggable="true" dropzone="move">
+<h1 contenteditable="true">dialog</h1>
+<p>ダイアログのテスト</p>
+<p><a onclick="document.querySelector('dialog').removeAttribute('open')" accesskey="1">閉じるボタン</a></p>
+<p>クロームとIEならAlt+１でも閉じることができます</p>    
+</dialog>  
 
 <div class="item">
 <p>テキスト</p>
@@ -76,12 +82,7 @@
 <p>
 <a onclick="document.querySelector('dialog').setAttribute('open','open')">ダイアログ</a>      
 </p>
-<div draggable="true" dropzone="copy"><img src="premium_book_49353_600x318.png"></div>
-<dialog draggable="true" dropzone="move">
-<h1 contenteditable="true">dialog</h1>
-<p>ダイアログのテスト</p>
-<p><a onclick="document.querySelector('dialog').removeAttribute('open')" accesskey="1">閉じるボタン</a></p>
-<p>クロームとIEならAlt+１でも閉じることができます</p>    
-</dialog>   
+
+ 
 </body>
 </html>
