@@ -1,0 +1,87 @@
+<! DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>テスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>見出し1</h1>
+<h2>見出し2</h2>
+<ruby>
+  <s>古い情報</s>
+  <u>スペルミス</u>
+
+  <rb>漢</rb>
+
+  <rb>字</rb>
+
+  <rp> (</rp>
+
+  <rt>かん</rt>
+
+  <rt>じ</rt>
+
+  <rp>) </rp>
+
+</ruby>  
+
+   <ruby>
+  <rbc>
+    <rb>弘</rb>
+    <rb>明</rb>
+    <rb>寺</rb>
+  </rbc>
+  <rtc>
+    <rt>ぐ</rt>
+    <rt>みょう</rt>
+    <rt>じ</rt>
+  </rtc>
+
+
+</ruby>
+
+
+<div class="item">
+<p>テキスト</p>
+<p>てきすと</p>
+</div>
+
+<div class="item">
+<p>テキスト</p>
+</div>
+
+<div class="item">
+<h4>小見出し</h4>
+<p>てきすと</p>
+</div>
+
+<dl>
+<dt>dt text</dt>
+<dd>dd text</dd>
+</dl>
+
+<dl>
+<dt>dt text</dt>
+<dd>dd text</dd>
+<dt>dt text</dt>
+<dd>dd text</dd>
+</dl>
+
+<dl>
+<dt>dt text</dt>
+</dl>
+
+<p>
+<a onclick="document.querySelector('dialog').setAttribute('open','open')">ダイアログ</a>      
+</p>
+<div draggable="true" dropzone="copy"><img src="premium_book_49353_600x318.png"></div>
+<dialog draggable="true" dropzone="move">
+<h1 contenteditable="true">dialog</h1>
+<p>ダイアログのテスト</p>
+<p><a onclick="document.querySelector('dialog').removeAttribute('open')" accesskey="1">閉じるボタン</a></p>
+<p>クロームとIEならAlt+１でも閉じることができます</p>    
+</dialog>   
+</body>
+</html>
